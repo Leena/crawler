@@ -21,7 +21,6 @@ class Formatter
   private
   
   def to_json
-    # expecting input as Hash {}
     sorted_data = data.sort.to_h
 
     File.open("#{file_drescription}.json", 'a') do |file|

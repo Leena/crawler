@@ -15,7 +15,7 @@ class Crawler
 
   def crawl 
     scrape_first_page(next_url)
- 
+    # TODO
     # until paths_to_visit.empty?
     #   fetch_queue = Queue.new
     #   threads = []
