@@ -1,0 +1,66 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ast (2.4.2)
+    faraday (1.8.0)
+      faraday-em_http (~> 1.0)
+      faraday-em_synchrony (~> 1.0)
+      faraday-excon (~> 1.1)
+      faraday-httpclient (~> 1.0.1)
+      faraday-net_http (~> 1.0)
+      faraday-net_http_persistent (~> 1.1)
+      faraday-patron (~> 1.0)
+      faraday-rack (~> 1.0)
+      multipart-post (>= 1.2, < 3)
+      ruby2_keywords (>= 0.0.4)
+    faraday-em_http (1.0.0)
+    faraday-em_synchrony (1.0.0)
+    faraday-excon (1.1.0)
+    faraday-httpclient (1.0.1)
+    faraday-net_http (1.0.1)
+    faraday-net_http_persistent (1.2.0)
+    faraday-patron (1.0.0)
+    faraday-rack (1.0.0)
+    faraday_middleware (1.2.0)
+      faraday (~> 1.0)
+    mini_portile2 (2.6.1)
+    multipart-post (2.1.1)
+    nokogiri (1.12.5)
+      mini_portile2 (~> 2.6.1)
+      racc (~> 1.4)
+    parallel (1.21.0)
+    parser (3.0.2.0)
+      ast (~> 2.4.1)
+    racc (1.4.16)
+    rainbow (3.0.0)
+    regexp_parser (2.1.1)
+    rexml (3.2.5)
+    rubocop (1.22.3)
+      parallel (~> 1.10)
+      parser (>= 3.0.0.0)
+      rainbow (>= 2.2.2, < 4.0)
+      regexp_parser (>= 1.8, < 3.0)
+      rexml
+      rubocop-ast (>= 1.12.0, < 2.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (>= 1.4.0, < 3.0)
+    rubocop-ast (1.12.0)
+      parser (>= 3.0.1.1)
+    ruby-progressbar (1.11.0)
+    ruby2_keywords (0.0.5)
+    unicode-display_width (2.1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  faraday
+  faraday_middleware (~> 1.2)
+  nokogiri
+  rubocop
+
+RUBY VERSION
+   ruby 2.7.0p0
+
+BUNDLED WITH
+   2.1.2
