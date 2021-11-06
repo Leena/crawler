@@ -39,45 +39,4 @@
       ]
     }
   }
-}{
-  "/" : {
-    "Links:" : [
-      "https://leenalallmon.com/",
-      "https://drive.google.com/file/d/13d2MaIGNZk_-q8hmrvjyAXo9ktGf30MH/view?usp=sharing",
-      "https://fjord-framework.github.io/",
-      "https://www.linkedin.com/in/leenalallmon/",
-      "https://github.com/Leena",
-      "https://www.facebook.com/tooplate"
-    ],
-    "Assets" : {
-      "CSS:" : [
-        "css/bootstrap.min.css",
-        "css/unicons.css",
-        "css/owl.carousel.min.css",
-        "css/owl.theme.default.min.css",
-        "https://unicons.iconscout.com/release/v4.0.0/css/line.css",
-        "css/style.css",
-        "assets/favicon.ico"
-      ],
-      "SCRIPTS:" : [
-        "js/jquery-3.3.1.min.js",
-        "js/popper.min.js",
-        "js/bootstrap.min.js",
-        "js/Headroom.js",
-        "js/jQuery.headroom.js",
-        "js/owl.carousel.min.js",
-        "js/smoothscroll.js",
-        "js/custom.js"
-      ],
-      "IMAGES:" : [
-        "assets/self",
-        "assets/Fjord/fjord_flow.gif",
-        "assets/Fjord/fjord_overview_2.png",
-        "assets/Fjord/fjord_chars.png",
-        "assets/projects/ruby_blogger.gif",
-        "assets/projects/spry.png",
-        "assets/projects/contact_manager.png"
-      ]
-    }
-  }
 }

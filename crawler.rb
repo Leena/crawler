@@ -115,3 +115,4 @@ class Crawler
       !pages.keys.include?(potential_path[0..-2])
   end
 end
+ 
