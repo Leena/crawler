@@ -1,3 +1,4 @@
+require 'bundler/setup'
 require 'faraday'
 require 'faraday_middleware'
 require 'nokogiri'
@@ -5,6 +6,7 @@ require_relative 'formatter'
 
 class Crawler
   attr_reader :scheme, :host
+  attr_accessor :pages
 
   def initialize(url)
     @to_visit = []
@@ -38,7 +40,7 @@ class Crawler
 
   private
 
-  attr_accessor :pages, :to_visit, :page_links
+  attr_accessor :to_visit, :page_links
 
   def scrape(document, path)
     document = Nokogiri::HTML(document)
@@ -51,8 +53,7 @@ class Crawler
     response = Faraday.get(url)
     return initial_state(url) if response.status == 200
   rescue StandardError
-    puts 'Please enter a complete URL, for example:'
-    puts 'https://www.websitename.com/'
+    puts 'Please enter a complete URL (example: https://www.websitename.com/).'
     puts 'If the error persists, please verify site is running.'
   end
 
@@ -115,26 +116,3 @@ class Crawler
   end
 end
 
-crawler = Crawler.new('https://sedna.com/')
-crawler.crawl
-crawler.export_json
-
-# TODO: - Optimize performance through threading or other measure
-#
-#   def crawl
-#     until @to_visit.empty?
-#       threads = []
-#       documents = Queue.new
-#       10.times do
-#         threads << Thread.new do
-#           path = @to_visit.pop
-#           documents << [fetch_next_page(new_request, path), path] if path
-#         end
-#       end
-#     end
-#     threads.each(&:join)
-#     documents.size.times do
-#       document = documents.pop
-#       scrape(document[0].body, document[1])
-#     end
-#   end

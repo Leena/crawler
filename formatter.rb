@@ -1,4 +1,5 @@
 require 'json'
+require 'time'
 
 class Formatter
   attr_accessor :file_drescription, :filename, :data, :options
@@ -19,9 +20,8 @@ class Formatter
 
   private
 
-  def to_json(*_args)
+  def to_json
     sorted_data = data.sort.to_h
-
     File.open("#{file_drescription}.json", 'a') do |file|
       file.write(JSON.generate(sorted_data, JSON_FORMAT_OPTIONS))
     end
