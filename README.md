@@ -2,7 +2,7 @@
 ### Overview
 This web crawler will visit all links contained within a domain. For each page, it will retrieve all links and assets such as images and files and generate the site map. It can generate a `JSON` file containing results. 
 
-Please see the `example_output` folder for pre-fetched results. 
+Please see the [example_output](https://github.com/Leena/web_crawler/tree/master/example_output) folder for pre-fetched results. 
 
 ###  Pre-requisites 
 1. [Ruby](https://www.ruby-lang.org/en/downloads/) version 2.7 or higher
@@ -28,6 +28,9 @@ crawler.export_json
 ```
 
 When ready, enter `ruby crawler.rb` at your terminal to start the process. 
+
+### Tests
+Run `ruby crawler_test.rb` to view results.
 
 ### Notes 
 There are performance issues for larger sites. The crawler does not leverage threading yet. 
