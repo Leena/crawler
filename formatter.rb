@@ -1,7 +1,6 @@
 require 'json'
 
 class Formatter
-  attr_accessor :file_drescription, :filename, :data, :options
 
   JSON_FORMAT_OPTIONS = {
     array_nl: "\n",
@@ -19,6 +18,8 @@ class Formatter
 
   private
 
+  attr_accessor :file_drescription, :filename, :data, :options
+  
   def to_json
     sorted_data = data.sort.to_h
     File.open("#{file_drescription}.json", 'a') do |file|

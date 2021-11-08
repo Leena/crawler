@@ -30,5 +30,4 @@ class CrawlerTest < Minitest::Test
     crawler.crawl
     refute_empty(crawler.pages)
   end
-  
 end
