@@ -1,5 +1,4 @@
 require 'json'
-require 'time'
 
 class Formatter
   attr_accessor :file_drescription, :filename, :data, :options
