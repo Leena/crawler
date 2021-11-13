@@ -16,7 +16,7 @@ class Crawler
 
   def new_request
     Faraday.new(url: "#{scheme}://#{host}") do |f|
-      f.request :retry # retry transient failures
+      f.request :retry
       f.response :follow_redirects
       f.ssl[:verify] = true
     end

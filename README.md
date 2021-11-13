@@ -42,6 +42,4 @@ There are performance issues for larger sites. The crawler does not leverage thr
 
 ### Future Work
 - [ ] Implement threading for multiple network calls and improved performance.
-- [ ] Improve testing coverage
 - [ ] Implement politeness setting 
-- [ ] Improve asset retrieval through `congif` file
