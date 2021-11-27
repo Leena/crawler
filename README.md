@@ -36,10 +36,11 @@ Run `ruby crawler_test.rb` to view results.
 There are performance issues for larger sites. The crawler does not leverage threading yet. 
 
 ### Design Choices
-1. Politeness is not verified
+1. Politeness is not verified for this prototype
 2. HTTP/S is the only protocol supported 
 3. Redirects are followed
 
 ### Future Work
 - [ ] Implement threading for multiple network calls and improved performance.
 - [ ] Implement politeness setting 
+- [ ] Improve testing
